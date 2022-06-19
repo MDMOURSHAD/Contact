@@ -1,0 +1,390 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+
+}
+
+
+/*
+========================================
+Start Basic Setup
+========================================
+*/
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+a,
+span,
+label{
+  display: inline-block;
+}
+
+a,
+a:focus{
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus{
+  outline: 0;
+  border: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+hr{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+========================================
+End Basic Setup
+========================================
+*/
+
+/*
+========================================
+Start Font Size
+========================================
+*/
+/*
+========================================
+End Font Size
+========================================
+*/
+.font-size-45{
+  font-size: 45px;
+}
+.font-size-30{
+  font-size: 30px;
+}
+.font-size-20{
+  font-size: 20px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+/*
+========================================
+Start Font Color
+========================================
+*/
+.font-color-ff{
+  color: #fff;
+}
+.font-color-11{
+  color: #111;
+}
+/*
+========================================
+End Font Color
+========================================
+*/
+
+/*
+========================================
+Start Font Family and Weight
+========================================
+*/
+.font-poppins-400{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.font-poppins-500{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.font-poppins-600{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.font-poppins-700{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+/*
+========================================
+End Font Family and Weight
+========================================
+*/
+/*
+========================================
+Start Background Color
+========================================
+*/
+.bg-ff{
+  background: #fff;
+}
+.bg-e3{
+  background: #e3e3e3;
+}
+/*
+========================================
+End Background Color
+========================================
+*/
+
+/*
+========================================
+Start Footer Section Css
+========================================
+*/
+.contact-banner p{
+  width: 70%;
+}
+.form{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{
+  background:#e3e3e3;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+   border: solid 0px #D3D3D3;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+  outline: none !important;
+}
+
+textarea{
+  height: 200px;
+  outline: none !important;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+textarea:hover{
+  box-shadow: 0 0 5pt 0.5pt #00000029;
+  outline: none !important;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus{
+  box-shadow: 0 0 5pt 2pt #00000029;
+  outline: none !important;
+}
+
+input[type=submit]{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #111;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+}
+
+/*=============================*/
+/* Input Submit hover effect
+/*=============================*/
+
+@-webkit-keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@-webkit-keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+.bob-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+  -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+  animation-name: bob-on-hover-float, bob-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+/*
+========================================
+End Footer Section Css
+========================================
+*/
+
+/*
+===================================
+Start Scroll to Top 
+===================================
+*/
+
+.scroll-top{
+    display: none;
+    position: fixed;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    background: #f54748;
+    bottom: 40px;
+}
+
+/* Bob */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.hvr-bob {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .4s, 1.5s;
+  animation-duration: .4s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/*
+===================================
+End Scroll to Top 
+===================================
+*/
